@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const mahasiswaRouter = require('../ExpressJS/routers/mahasiswarouters');
-const userRouter = require('../ExpressJS/routers/users');
+const mahasiswaRouter = require('./routers/mahasiswarouters');
+const userRouter = require('./routers/users');
 const cors = require('cors');
 const app = express();
-const port = 8000; // Adjust the port as needed
+const port = 3000; // Adjust the port as needed
 
 app.use(cors());
 
