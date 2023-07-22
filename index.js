@@ -8,13 +8,6 @@ const port = 3000; // Adjust the port as needed
 
 app.use(cors());
 
-const corsOptions = {
-  origin: "https://sekar-frontendbackend.vercel.app/",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
-
-app.use(cors(corsOptions));
 // Connect to MongoDB
 mongoose
   .connect('mongodb+srv://azis:1234@cluster0.qejy4pl.mongodb.net/?retryWrites=true&w=majority', {
